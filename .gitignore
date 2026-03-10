@@ -1,7 +1,16 @@
 venv/
+.venv/
+source/.venv/
 __pycache__/
 *.pyc
 *.log
+
+source/data/logs/*
+!source/data/logs/.gitkeep
+source/data/reports/*
+!source/data/reports/.gitkeep
+source/data/snapshots/*
+!source/data/snapshots/.gitkeep
 
 # PyInstaller / Build
 build/

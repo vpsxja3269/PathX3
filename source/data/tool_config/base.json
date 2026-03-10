@@ -1,0 +1,63 @@
+[
+  {
+    "id": "python",
+    "display_name": "Python",
+    "description": "스크립트와 가상환경에 사용되는 Python 인터프리터입니다.",
+    "executables": ["python.exe", "py.exe"],
+    "version_args": ["--version"],
+    "candidate_paths": [
+      "%LocalAppData%\\Programs\\Python\\Python*\\python.exe",
+      "%ProgramFiles%\\Python*\\python.exe",
+      "%ProgramFiles%\\Python\\Python*\\python.exe",
+      "%ProgramFiles(x86)%\\Python*\\python.exe"
+    ],
+    "path_hints": [
+      "%LocalAppData%\\Programs\\Python\\Python*",
+      "%ProgramFiles%\\Python*",
+      "%ProgramFiles(x86)%\\Python*"
+    ],
+    "notes": [
+      "Python은 여러 버전을 연속 설치하면 PATH 충돌이 자주 발생합니다.",
+      "python.exe가 PATH에 없어도 py.exe 실행기는 동작할 수 있습니다."
+    ]
+  },
+  {
+    "id": "git",
+    "display_name": "Git",
+    "description": "터미널과 IDE 연동에서 사용되는 Git 명령줄 도구입니다.",
+    "executables": ["git.exe"],
+    "version_args": ["--version"],
+    "candidate_paths": [
+      "%ProgramFiles%\\Git\\cmd\\git.exe",
+      "%ProgramFiles(x86)%\\Git\\cmd\\git.exe"
+    ],
+    "path_hints": [
+      "%ProgramFiles%\\Git\\cmd",
+      "%ProgramFiles%\\Git\\bin",
+      "%ProgramFiles(x86)%\\Git\\cmd"
+    ],
+    "notes": [
+      "Git for Windows는 보통 cmd 폴더를 통해 git.exe를 제공합니다."
+    ]
+  },
+  {
+    "id": "node",
+    "display_name": "Node.js",
+    "description": "Node.js 런타임과 JavaScript 패키지 생태계의 진입점입니다.",
+    "executables": ["node.exe"],
+    "version_args": ["--version"],
+    "candidate_paths": [
+      "%ProgramFiles%\\nodejs\\node.exe",
+      "%ProgramFiles(x86)%\\nodejs\\node.exe",
+      "%AppData%\\nvm\\*\\node.exe"
+    ],
+    "path_hints": [
+      "%ProgramFiles%\\nodejs",
+      "%ProgramFiles(x86)%\\nodejs",
+      "%AppData%\\nvm\\*"
+    ],
+    "notes": [
+      "nvm과 함께 설치하면 Node.js가 여러 버전으로 보일 수 있습니다."
+    ]
+  }
+]
